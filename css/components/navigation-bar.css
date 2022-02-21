@@ -1,0 +1,19 @@
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #F9F9FA;
+    padding: 20px 0;
+    border-top: 1.5px solid #E2E2E2;
+}
+.nav__list {
+    display: flex;
+}
+.nav__btn {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+.nav__link {
+    color: #2E363E;
+}

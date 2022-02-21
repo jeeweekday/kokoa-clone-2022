@@ -12,6 +12,7 @@
 }
 .welcome-header__text {
     font-size: 18px;
+    line-height: 22px;
     width: 70%;
     opacity: 0.6;
 }
