@@ -1,0 +1,55 @@
+/* more-user-componet part */
+
+.more-user-component i {
+    font-size: 30px;
+    color: var(--font-color-2ndv2);
+}
+
+/* more-icons part */
+
+.more-icons-row {
+    border-bottom: 1.5px solid var(--border-color);
+    padding: 15px 0;
+}
+.more-icons-row .icons-row {
+    border-bottom: none;
+}
+.more-icons__blank {
+    opacity: 0;
+}
+/* 자리만 차지하고 사라지게 하기위해
+opacity 사용했는데 더 낳은 방법이 있나.? */
+
+/* more-suggestions part */
+
+.more-suggestions__header {
+    font-size: 15px;
+    padding: 25px 0;
+}
+.more-suggestions__icons {
+    display: flex;
+}
+.more-suggestions__icon {
+    width: 25%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.more-suggestions__icon img {
+    width: 55px;
+    height: 55px;
+    border-radius: 6px;
+}    
+.more-suggestions__icon span {
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--font-color-3rd);
+}
+/* 화면을 늘렸을때 어떤방식으로 아이콘들이 벌어지냐도
+중요한 요소인듯
+icons-row는 space-between
+suggestions에는 100/n%로 공간을 주고
+가운데 정렬을 하는 식으로 만들어봄 */
