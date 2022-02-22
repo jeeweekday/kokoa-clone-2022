@@ -1,0 +1,29 @@
+.user-component {
+    /* background-color: tomato; */
+    /* margin: 10px 20px; */
+    display: flex;
+    justify-content: space-between;
+}
+.user-component__column:first-child {
+    display: flex;
+}
+.user-component__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 35%;
+    margin-right: 12px;
+}
+.user-component__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.user-component__title {
+    font-weight: 600;
+    margin-bottom: 3px;
+    color: #2C2C2C;
+}
+.user-component__subtitle {
+    font-size: 14px;
+    color: #888888;
+}

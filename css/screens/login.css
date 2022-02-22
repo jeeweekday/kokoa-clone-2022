@@ -14,7 +14,7 @@
     font-size: 18px;
     line-height: 22px;
     width: 70%;
-    opacity: 0.6;
+    color: rgba(0,0,0,0.6);
 }
 
 #login-form {

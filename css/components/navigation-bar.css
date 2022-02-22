@@ -15,5 +15,23 @@
     justify-content: center;
 }
 .nav__link {
+    position: relative;
     color: #2E363E;
+}
+.nav__notification {
+    background-color: tomato;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    /* 알림표시 안에 숫자 가운데에 정렬하는법 2가지 */
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: white;
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
 }
