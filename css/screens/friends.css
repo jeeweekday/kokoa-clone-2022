@@ -5,8 +5,27 @@
     color: #303030;
     font-size: 15px;
     letter-spacing: -0.2px;
-    padding:12px 0;
+    padding: 12px 0;
+    margin: -10px 0 10px;
 }
 #friends-display-link i {
     color: #D5D5D5;
+}
+.friends-screen {
+    padding: 0 var(--horizontal-space);
+}
+.friends-screen__channel-header {
+    margin: 15px 0;
+    padding: 10px 0;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.friends-screen__channel-header span {
+    font-size: 14px;
+    color: var(--font-color-3rd);
+}
+.friends-screen__channel-header i {
+    color: var(--font-color-3rd);
 }

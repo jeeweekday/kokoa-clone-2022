@@ -8,6 +8,7 @@
 @import "components/screen-header.css";
 @import "components/navigation-bar.css";
 @import "components/user-component.css";
+@import "components/badge.css";
 
 /* Screens */
 @import "screens/login.css";
@@ -15,5 +16,15 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    /* height: 1000vh; */
+    height: 1000vh;
+    padding-top: 100px;
+}
+/* .invisible-space {
+    background-color: white;
+    height: 100px;
+} */
+/* fiexd된 status-bar & screen-header 밑의 공간을 채우기 위해서 적음
+괜찮은 방법인가 .?.? --> 이렇게 할 필요없이 바디에 패딩을 주면 될듯..*/
+.main-screen {
+    padding: 0 var(--horizontal-space);
 }

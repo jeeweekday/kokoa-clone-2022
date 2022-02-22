@@ -1,3 +1,10 @@
 :root {
-    --yellow: #FAE100
+    --yellow: #FAE100;
+    --horizontal-space: 20px;
+    --border-color: #E2E2E2;
+    --font-color-2nd: #2C2C2C;
+    --font-color-3rd: #6d6d6d;
+    /* 공통으로 사용할 변수들을 넣어줌
+    공통 색상, 사이즈 etx..
+    공통으로 쓸 컬러 리스트도 만들어놓고 사용해도 좋을듯 */
 }
