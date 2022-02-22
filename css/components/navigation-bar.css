@@ -23,3 +23,6 @@
     left: 10px;
     bottom: 5px;
 }
+.nav__link .red-dot {
+    top: -5px;
+}

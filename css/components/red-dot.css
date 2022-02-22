@@ -1,0 +1,11 @@
+.red-dot {
+    position: absolute;
+    top: 0px;
+    right: -8px;
+    background-color: tomato;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+/* 선행요소 position:relative; 필요 */
+/* <span class="red-dot"></span> */
