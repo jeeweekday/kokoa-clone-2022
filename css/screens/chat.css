@@ -1,0 +1,149 @@
+.chat-screen {
+    background-color: #ABC0D1;
+}
+.main-chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chat__latest-time {
+    background-color: #91A3B2;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0 20px;
+    padding: 8px 10px;
+    border-radius: 20px;
+}
+
+/* msg part */
+
+.chat__main-msg {
+    width: 100%;
+}
+.chat__msg {
+    display: flex;
+    margin-bottom: 10px;
+    transform: translateX(-100%);
+}
+.chat__column img {
+    width: 45px;
+    height: 45px;
+    border-radius: 15px;
+    margin-right: 8px;
+}
+.chat__name {
+    color: var(--font-color-3rd);
+    font-size: 15px;
+}
+.chat__info {
+    display: flex;
+    align-items: flex-end;
+}
+.chat__info span:first-child {
+    background-color: white;
+    display: block;
+    margin-top: 6px;
+    padding: 10px 12px;
+    border-radius: 14px;
+}
+.chat__info span:last-child {
+    color: var(--font-color-3rd);
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+/* 추가하고 싶은것. 메시지 말풍선 꼬리!!!! */
+/* msg--own part */
+
+.chat__msg--own {
+    justify-content: flex-end;
+    transform: translateX(100%);
+}
+.chat__msg--own img {
+    display: none;
+}
+.chat__msg--own .chat__name {
+    display: none;
+}
+.chat__msg--own .chat__info {
+    flex-direction: row-reverse;
+}
+.chat__msg--own .chat__info span:first-child{
+    background-color: var(--yellow);
+}
+
+@keyframes msgComeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+.chat__msg {
+    animation: msgComeIn 0.2s linear forwards;
+}
+/* 사이드에서 메세지가 들어오게 애니메이션을 만들었더니
+애니메이션 시작시에 가로 스크롤 바가 생겼다가 사라짐. */
+
+/* chat-input part */
+.chat-input {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    padding: 0 4%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chat-input__column:first-child i {
+    font-size: 30px;
+    color: var(--font-color-3rd);
+    padding-right: 15px;
+}
+.chat-input__column:last-child {
+    position: relative;
+    width: 100%;
+    /* padding-left: 15px; */
+}
+.chat-input__column:last-child input {
+    width: 100%;
+    border: 1.5px solid var(--border-color);
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.chat-input__column:last-child > i {
+    background-color: white;
+    position: absolute;
+    top: 7px;
+    right: 27px;
+    font-size: 26px;
+    padding-right: 20px;
+    color: var(--font-color-3rd);
+}
+.chat-input__column:last-child button {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background-color: var(--yellow);
+    height: 34px;
+    width: 34px;
+    border-radius: 17px;
+    border: none;
+}
+
+/* 이런식으로 할거면
+input의 모양을 변경하고 안에 아이콘을 넣는것 보다
+input을 포함 아이콘을 상부의 박스에 넣고
+상부박스의 모양을 변경하는게 더 좋을듯! */

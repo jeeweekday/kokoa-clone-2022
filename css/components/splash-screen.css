@@ -1,0 +1,32 @@
+@keyframes hideSplashScreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#splash-screen {
+    position: absolute;
+    top: 0;
+    background-color: var(--yellow);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 128px;
+    z-index: 3;
+    animation: hideSplashScreen 0.2s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+/* 애니메이션 마지막 값을 유지시키고 싶으면
+forwards를 붙혀줌.
+but 값은 유지되지만 또한 완전히 사라지는게 아님
+그래서 visibility: hidden을 사용함.
+but 이것또한 무시하게 도와주는거지 개발자 툴로볼때는
+여전히 남아있고, 완전히 없애려면
+JS가 필요함 */

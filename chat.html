@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - KokoaClone</title>
+</head>
+<body class="chat-screen">
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>01:37</span>
+        </div>
+        <div class="status-bar__column">
+            <span>200%</span>
+            <i class="fa-solid fa-battery-full fa-xl"></i>
+            <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+    </div>
+
+    <header class="alt-screen-header">
+        <div class="alt-screen-header__back">
+            <a href="javascript:history.back();"><i class="fa-solid fa-angle-left fa-2xl"></i></a>
+        </div>
+        <div class="alt-screen-header__title">
+            <h1>KokoaClone</h1>
+        </div>
+        <div class="alt-screen-header__icon">
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+        <!-- <a href="javascript:history.back();"></a> 뒤로가기 가능하게 해줌 -->
+    </header>
+
+    <main class="main-screen main-chat">
+
+        <div class="chat__latest-time">
+            Wendseday, Faburary 23, 2022
+        </div>
+
+        <div class="chat__main-msg">
+            <div class="chat__msg">
+                <div class="chat__column">
+                    <img src="screenshots/talk-img.png"/>
+                </div>
+                <div class="chat__column">
+                    <div class="chat__name">KokoaClone</div>
+                    <div class="chat__info">
+                        <span>Welcome !</span>
+                        <span>21:27</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chat__msg chat__msg--own">
+                <div class="chat__column">
+                    <img src="screenshots/talk-img.png"/>
+                </div>
+                <div class="chat__column">
+                    <div class="chat__name">Own Msg</div>
+                    <div class="chat__info">
+                        <span>?</span>
+                        <span>21:28</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chat__msg">
+                <div class="chat__column">
+                    <img src="screenshots/talk-img.png"/>
+                </div>
+                <div class="chat__column">
+                    <div class="chat__name">KokoaClone</div>
+                    <div class="chat__info">
+                        <span>What's your problem ?</span>
+                        <span>21:29</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chat__msg chat__msg--own">
+                <div class="chat__column">
+                    <img src="screenshots/talk-img.png"/>
+                </div>
+                <div class="chat__column">
+                    <div class="chat__name">Own Msg</div>
+                    <div class="chat__info">
+                        <span>I like LINE</span>
+                        <span>21:30</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chat__msg">
+                <div class="chat__column">
+                    <img src="screenshots/talk-img.png"/>
+                </div>
+                <div class="chat__column">
+                    <div class="chat__name">KokoaClone</div>
+                    <div class="chat__info">
+                        <span>...</span>
+                        <span>21:29</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <div id="control-screen-size">
+        <span>Screen size is too big</span>
+        <i class="fa-solid fa-minimize"></i>
+        <span>Please make it smaller</span>
+    </div>
+
+    <form class="chat-input">
+        <div class="chat-input__column">
+            <i class="fa-regular fa-square-plus"></i>
+        </div>
+        <div class="chat-input__column">
+            <input type="text" placeholder="Please enter here">
+            <i class="fa-regular fa-face-smile"></i>
+            <button>
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+    </form>
+
+    <script src="https://kit.fontawesome.com/4ff560df84.js" crossorigin="anonymous"></script>  
+</body>
+</html>

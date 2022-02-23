@@ -1,0 +1,32 @@
+#control-screen-size {
+    position: absolute;
+    color: #3C1D1E;
+    letter-spacing: -2px;
+    font-weight: 600;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+#control-screen-size span {
+    font-size: 35px;
+}
+#control-screen-size i {
+    font-size: 100px;
+    margin: 20px 0 10px;
+}
+
+@media screen and (max-width:650px) {
+    #control-screen-size {
+        display: none;
+    }
+}
+
+/* 기존에 스크롤이 넘어가는 화면에서
+컨트롤스크린 화면으로 넘어갈때 해당화면 밑으로 스크롤이 되면서
+감춰진 부분이 보임. <- 고쳐야함 ㅠ */

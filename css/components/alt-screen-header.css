@@ -9,10 +9,22 @@
     padding: 20px;
     opacity: 0.8;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: center; */
     align-items: center;
 }
+.alt-screen-header > div {
+    width: 33%;
+}
 .alt-screen-header__title {
+    display: flex;
+    justify-content: center;
     font-size: 25px;
     font-weight: 600;
+}
+.alt-screen-header__icon {
+    display: flex;
+    justify-content: flex-end;
+}
+.alt-screen-header__icon i {
+    padding-left: 10px;
 }
